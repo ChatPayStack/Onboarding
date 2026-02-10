@@ -86,27 +86,19 @@ Each stage is isolated and testable:
 
 ## High-Level Architecture
 
-Shopify Store URL
-        |
-        v
-Ingestion Pipeline
-  ├─ Products (products.json)
-  ├─ Collections
-  ├─ Pages / Policies
-  └─ Footer & Homepage Links
-        |
-        v
-Chunking & Embeddings
-        |
-        v
-Vector Store (per business)
-        |
-        v
-Agent Layer (LangGraph)
-  ├─ Enquiry
-  ├─ Cart
-  ├─ Payments (stubbed)
-  └─ Chitchat
+flowchart TD
+    A[Shopify Store URL] --> B[Ingestion Pipeline]
+    B --> B1[Products]
+    B --> B2[Collections]
+    B --> B3[Pages / Policies]
+    B --> B4[Footer & Homepage Links]
+    B --> C[Chunking & Embeddings]
+    C --> D[Vector Store (per business)]
+    D --> E[Agent Layer]
+    E --> E1[Enquiry]
+    E --> E2[Cart]
+    E --> E3[Payments (stubbed)]
+    E --> E4[Chitchat]
 
 ---
 
