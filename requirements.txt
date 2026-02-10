@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+beautifulsoup4
+lxml
+pydantic
+python-dotenv
+pymongo
+openai
+motor
