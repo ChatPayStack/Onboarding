@@ -6,7 +6,7 @@ import os
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
-def query_rag(business_id: str, query: str, top_k: int = 5):
+def query_rag(business_id: str, query: str, top_k: int = 30):
     db = get_db()
 
     # embed query
@@ -23,7 +23,7 @@ def query_rag(business_id: str, query: str, top_k: int = 5):
     )
 
     context = "\n\n".join(r["text"] for r in results)
-
+    print(context)
     # final answer
     resp = client.chat.completions.create(
         model="gpt-4o-mini",
