@@ -4,7 +4,7 @@ Turn any Shopify store into an AI sales assistant **in under 10 seconds** — ju
 
 This project ingests a Shopify store, understands its products and business information, and deploys an AI agent that can answer questions, recommend products, manage a cart, and guide users toward checkout — all powered by Retrieval-Augmented Generation (RAG).
 
-![Demo](assets/demo.gif)
+![Demo](assets/Demo.gif)
 
 ---
 
