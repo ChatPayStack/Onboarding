@@ -1,4 +1,4 @@
-# Shopify AI Sales Agent (RAG-Powered)
+# Onboarding For AI Sales Agent (RAG-Powered)
 
 Turn any Shopify store into an AI sales assistant **in under 10 seconds** — just paste your store URL.
 
