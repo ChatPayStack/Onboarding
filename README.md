@@ -93,11 +93,11 @@ flowchart TD
     B --> B3[Pages / Policies]
     B --> B4[Footer & Homepage Links]
     B --> C[Chunking & Embeddings]
-    C --> D[Vector Store (per business)]
+    C --> D[Vector Store - per business]
     D --> E[Agent Layer]
     E --> E1[Enquiry]
     E --> E2[Cart]
-    E --> E3[Payments (stubbed)]
+    E --> E3[Payments - stubbed]
     E --> E4[Chitchat]
 ```
 ---
