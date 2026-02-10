@@ -85,6 +85,7 @@ Each stage is isolated and testable:
 ---
 
 ## High-Level Architecture
+
 Shopify Store URL
         |
         v
