@@ -85,7 +85,7 @@ Each stage is isolated and testable:
 ---
 
 ## High-Level Architecture
-
+```mermaid
 flowchart TD
     A[Shopify Store URL] --> B[Ingestion Pipeline]
     B --> B1[Products]
@@ -99,7 +99,7 @@ flowchart TD
     E --> E2[Cart]
     E --> E3[Payments (stubbed)]
     E --> E4[Chitchat]
-
+```
 ---
 
 ## API Flow (Simplified)
