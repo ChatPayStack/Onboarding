@@ -86,27 +86,26 @@ Each stage is isolated and testable:
 
 ## High-Level Architecture
 Shopify Store URL
-|
-v
+        |
+        v
 Ingestion Pipeline
-├─ Products (products.json)
-├─ Collections
-├─ Pages / Policies
-└─ Footer & Homepage Links
-|
-v
+  ├─ Products (products.json)
+  ├─ Collections
+  ├─ Pages / Policies
+  └─ Footer & Homepage Links
+        |
+        v
 Chunking & Embeddings
-|
-v
+        |
+        v
 Vector Store (per business)
-|
-v
+        |
+        v
 Agent Layer (LangGraph)
-├─ Enquiry
-├─ Cart
-├─ Payments (stubbed)
-└─ Chitchat
-
+  ├─ Enquiry
+  ├─ Cart
+  ├─ Payments (stubbed)
+  └─ Chitchat
 
 ---
 
