@@ -58,6 +58,8 @@ def build_rag_index(business_id: str, upload_batch_id: str) -> Dict[str, Any]:
         t = (c.get("text") or "").strip()
         if not t:
             continue
+        if not t or len(t) > 6000:   # safety guard
+            continue
 
         items.append(
             {
@@ -73,10 +75,11 @@ def build_rag_index(business_id: str, upload_batch_id: str) -> Dict[str, Any]:
 
     # ---- product docs ----
     for i, p in enumerate(products):
+        desc = (p.get("description") or "")[:4000]
         line = (
             f"PRODUCT: {p.get('name','')}\n"
             f"PRICE: {p.get('price')}\n"
-            f"DESC: {p.get('description','')}"
+            f"DESC: {desc}"
         )
 
         items.append(
