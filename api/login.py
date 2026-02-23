@@ -27,8 +27,12 @@ def login(req: LoginRequest):
     
     if not user.get("business_id"):
         updates["business_id"] = str(uuid.uuid4())
-    if not user.get("upload_batch_id"):
+
+    if "upload_batch_id" not in user:
         updates["upload_batch_id"] = None
+
+    if "telegram_bot_token" not in user:
+        updates["telegram_bot_token"] = None
 
     if updates:
         db["login"].update_one(
